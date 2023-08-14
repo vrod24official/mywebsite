@@ -1,0 +1,252 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+    --color-gray: #464545;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+
+  #top {
+    background: var(--color-black);
+    color: #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  #top .social {
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    
+  }
+  #top .social a {
+    color: #999999;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+  }
+  #top .social a:hover {
+    color: #fff;
+    background: var(--primary-accent);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .logo {
+    color: var(--color-white);
+    font-size: 60px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+  }
+  
+  .logo span{
+    color: var(--color-primary);
+  }
+  .menu-bar {
+    background-color: var(--color-black);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: px;
+    position: relative;
+  }   
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    /* text-align: center; */
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 16px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+    
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: None;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+
+  .hero {
+    height: calc(100vh - 80px);
+    background-image: url(wallpaper2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--color-black)
+  }
+
+  .content h1{
+    font-size: 60px;
+    margin: 50px;
+    padding-left: 630px;
+    
+  }
+  
+  .content p{
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    padding-left: 630px;
+  }
+  
+  .button1{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    right: 650px;
+   
+  }
+  
+  .button1 span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    font-size: 50px;
+  }
+  
+  .button1:hover span{
+    width: 100%; 
+  }
+  
+  .button1:hover:hover{
+    color: #fff
+  }
+  
+  .button1:active{
+    opacity: 0.7;
+}
+
+.button2{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #000; 
+  font-size: 17px;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  right: 425px;
+}
+
+.button2 span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;  
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+  font-size: 50px;
+}
+
+.button2:hover span{
+  width: 100%; 
+}
+
+.button2:hover:hover{
+  color: #fff
+}
+
+.button2:active{
+  opacity: 0.7;
+}
